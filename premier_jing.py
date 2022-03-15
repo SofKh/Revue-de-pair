@@ -11,3 +11,5 @@ def premier():
     return None
 
 premier()
+
+# Bonne utilisation du f"{}
