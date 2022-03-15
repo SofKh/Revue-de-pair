@@ -12,7 +12,7 @@ def menu():
     
     choix=int(input("Veuillez choisir une proposition parmis les choix proposés: "))
     
-    if choix ==1 :
+    if choix ==1 : #after logical equal sign, better to put a space.
         print("Bonjour")
     elif choix == 2:
         print("Au revoir")
