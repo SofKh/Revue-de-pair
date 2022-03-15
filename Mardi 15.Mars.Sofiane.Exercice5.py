@@ -4,7 +4,7 @@
 
 def generation():
     
-    année=int(input("Indiquez votre année de naissance afin de savoir votre generation: "))
+    année=int(input("Indiquez votre année de naissance afin de savoir votre generation: ")) #better put space before and after the equal sign.
     if année >= 1946 and année < 1965:
         print("Vous etes de la generation Baby-boomers")
     elif année >= 1965 and année < 1980:
@@ -12,6 +12,6 @@ def generation():
     elif année >= 1980 and année < 2000:
         print("Vous etes de la generation Y")
     else:
-        print("Vous etes de la generation Z")
+        print("Vous etes de la generation Z") #always put keywords return in the end of a fonction.
 
 generation()
