@@ -10,8 +10,8 @@ def fonction(nbr1, nbr2):
 nbr1=1
 nbr2=3
 
-fonction(1,3)
-
+fonction(1,3) #nbr1,nbr2 ne sont pas utilise dans le fonction.
+#non pas de "print", ne vas pas afficher
 
 
 
