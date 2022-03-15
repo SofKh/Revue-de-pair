@@ -10,3 +10,5 @@ a, s, d = operation(f1, f2)
 print(f"l'addition de {f1} et {f2} est {a:.1f}")
 print(f"la soustraction de {f1} et {f2} est {s:.2f}")
 print(f"la division de {f1} et {f2} est {d:.3f}")
+
+#Bonne organisation du code
