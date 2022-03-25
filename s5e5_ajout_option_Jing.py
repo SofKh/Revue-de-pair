@@ -17,3 +17,5 @@ elif choix == 1:
     print("Emma Parent Senez: ", dic_cours["Emma Parent Senez"])
 elif choix == 2:
     print("Jean-Pierre Fiset: ", dic_cours["Jean-Pierre Fiset"])
+    
+    # bonne utilisation des nouvelles notions apprises
