@@ -25,7 +25,7 @@ elif choix == 3:
     for k in dic_cours.keys():
         if nom_prof == k:
             f = True
-    if f == True:
+    if f == True: 
         print(nom_prof, ": ", dic_cours[nom_prof])
     else:
         print("l'enseignant n'est pas présent dans la liste de cours.")
@@ -36,3 +36,7 @@ elif choix == 4:
         fila.write("\n")
         fila.write(f"{kin}\n")
         fila.write(f"{vin}\n")
+
+# ligne 28 "if f is True" est preferable        
+#  peu de repetitions 
+# bonne clarte du code
