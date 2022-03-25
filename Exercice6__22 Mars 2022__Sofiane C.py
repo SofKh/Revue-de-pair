@@ -56,4 +56,4 @@ elif utilisateur == 5:
         file.write("\n")
         file.write(f"{nouveau_prof}\n")
         file.write(f"{nouveau_cours}\n")
-        file.close()
+        file.close()  # by using "with open", you don't have to close file.
