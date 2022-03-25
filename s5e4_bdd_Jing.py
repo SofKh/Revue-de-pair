@@ -6,3 +6,5 @@ with open("bdd.txt", "r") as filin:
         value = lists[i]
         dic_cours[key] = value
     print(dic_cours)
+    
+    # bonne organisation du code
