@@ -20,7 +20,9 @@ elif choix == 3:
     for k in dic_cours.keys():
         if nom_prof == k:
             f = True
-    if f == True:
+    if f == True:  # On peut ecrire "if f is True:" OU simplement "if:" 
         print(nom_prof, ": ", dic_cours[nom_prof])
     else:
         print("l'enseignant n'est pas présent dans la liste de cours.")
+
+# bonne pratiques
