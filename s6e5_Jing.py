@@ -7,15 +7,12 @@ def entrer_nom_f():
 # Entrez un nombre illimité de nombres positif
 def entrer_listnbr():
     liste_nbr = []
-    n = int(input("combien de nombres voulez vous entrez: "))
-    i = 0
-    while i < n:
+    while True:
         num = int(input("Entrez un nombre positif: "))
         if num >= 0:
             liste_nbr.append(num)
-            i = i + 1
         else:
-            print("nombre est negatif, veuillez entrer un nombre positif.")
+            break
     return liste_nbr
 
 # La liste en ordre croissant
@@ -72,14 +69,18 @@ def num_mediane(list_num):
 
 # Le mode
 def num_mode(list_num):
-    dic = {}
-    for i in range(len(list_num)):
-        count = 0
-        for j in range(len(list_num)):
-            if list_num[i] == list_num[j]:
-                count = count + 1
-        dic[list_num[i]] = count
-    return dic
+    dic_num = {}
+    for num in list_num:
+        if num in dic_num:
+            dic_num[num] += 1
+        else:
+            dic_num[num] = 1
+    max = list(dic_num.values())[0]
+    for k, v in dic_num.items():
+        if max < v:
+            max = v
+            key = k
+    return key, max
         
 l_num = entrer_listnbr()
 l_num_croi = trier_croissant(l_num)
@@ -88,7 +89,7 @@ num_max = num_max(l_num)
 num_min = num_min(l_num)
 num_moy = num_moy(l_num)
 num_mediane = num_mediane(l_num_croi)
-nom_mode = max(num_mode(l_num))
+nom_mode = num_mode(l_num)
 
 nom_f = entrer_nom_f()
 with open(nom_f, "w") as f_out:
