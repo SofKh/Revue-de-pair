@@ -76,3 +76,4 @@ def menu():
             exit = True
 
 menu()
+# nice animations !! good job :)
